@@ -18,6 +18,11 @@
 	<script src="scripts/before-form.js"></script>
 	<script src="scripts/before-modal.js"></script>
 	<script src="scripts/before-hero.js"></script>
+  <style>
+    a:focus {
+      outline: 2px solid #0073e6;
+    }
+  </style>
 </head>
 <body>
   <div id="content">
@@ -30,7 +35,7 @@
         </ul>
       </nav>
       <a href="/">
-        <img id="logo" src="images/8675309-l-o-g-o-before.png" class="d-block"/>
+        <img id="logo" src="images/8675309-l-o-g-o-before.png" alt=”Accessible University” class="d-block">
       </a>
     </div>
 
@@ -123,7 +128,7 @@
 
               <div class="section">
                 <div class="heading">Welcome!</div>
-                <p>Accessible University (AU) is a <a href="https://www.merriam-webster.com/dictionary/fictional">fictional</a> <a href="https://en.wikipedia.org/wiki/University">university</a>, and this is its
+                <p>Accessible University (AU) is a <a href="https://www.merriam-webster.com/dictionary/fictional">fictional</a> <a href="https://en.wikipedia.org/wiki/University" style="color: #0073e6;">university</a>, and this is its
                   fictional home page. This page is designed to demonstrate a variety of
                   common web design <a href="https://www.merriam-webster.com/dictionary/problems">problems</a> that result in visitors with disabilities
                   being unable to access the content or features of a web page.
@@ -249,11 +254,11 @@
 
                   <div class="required form-group">
                     Name:
-                    <input type="text" name="name" class="form-control" />
+                    <input type="text" name="name" class="form-control" aria-label=”Name”>
                   </div>
                   <div class="required form-group">
                     Email:
-                    <input type="text" name="email" class="form-control" />
+                    <input type="text" name="email" class="form-control" aria-label="email" />
                   </div>
                   <div class="form-group">
                     Country:
@@ -273,7 +278,7 @@
                     <p>Security Test</p>
                     <p>Please enter the two words you see below, separated by a space</p>
                     <input type="text" name="captcha">
-                    <img src="images/captcha.png">
+                    <img src="images/captcha.png" alt=”negative 72.9 degrees symbol o 4 p l e t t”>
                   </div>
 
                   <div class="mt-2">
